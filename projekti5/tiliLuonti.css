@@ -1,0 +1,33 @@
+.topnav {
+  overflow: hidden;
+  background-color: #ecae96;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Coming Soon', cursive;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #eee3e3;
+  color: black;
+}
+
+#tilinluonti {
+  border-style: solid;
+  padding: 20px;
+  margin: auto;
+  float: none;
+  margin-top: 20px;
+  background-color: #e2e1e1;
+  font-family: 'Coming Soon', cursive;
+  font-size: 22px;
+  height: 85vh;
+  text-align: center;
+}
