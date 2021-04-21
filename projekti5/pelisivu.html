@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--käyttää uusinta päivitystä-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/v4-shims.js"></script> <!--Nää scripti hommelit piti hakee, että sai tähdet näkyviin. Ruutuun ilmestyi myös ns. reset nuoli millä voi aloittaa suoraan alusta/Toni/20.4-->
     <link rel="stylesheet" href="pelisivu.css">
-    
+
     <title>Muistipeli</title>
 </head>
 
@@ -13,29 +17,25 @@
     <header>Muistipeli</header>
     <div class="topnav">
       <a href="kotisivu.html">Kotisivu</a>
-     
+
       <a href="mestarienLiiga.html">Mestarien liiga</a>
       <a href="kirjautumisIkkuna.html" style="float: right">Kirjaudu ulos</a>
     </div>
-    
-      <div class="container">
-        
 
+      <div class="container"> 
         <section class="score-panel">
-        	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        	</ul>
+            
+        	
 
         	<span class="moves">0</span> siirtoa
 
             <div class="timer">
             </div>
 
-            <div class="restart" onclick=startGame()>
+            <div class="restart" onclick="startGame()">
         		<i class="fa fa-repeat"></i>
         	</div>
+            
         </section>
 
         <ul class="deck" id="card-deck">
@@ -92,17 +92,16 @@
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2> Onnittelut 🎉</h2>
-                <a class="close" href=# >×</a>
+                <a class="close" href="#" >×</a>
                 <div class="content-1">
                     Läpäisit pelin!
                 </div>
                 <div class="content-2">
-                    <p>Teit <span id=finalMove> </span> siirtoa </p>
-                    <p>ajassa <span id=totalTime> </span> </p>
-                    <p>Suoritus:  <span id=starRating></span></p>
+                    <p>Teit <span id="finalMove"> </span> siirtoa </p>
+                    <p>ajassa <span id="totalTime"> </span> </p>
                 </div>
-                <button id="play-again"onclick="playAgain()">
-                    Pelaa uudelleen </a>
+                <button id="play-again" onclick="playAgain()">
+                    Pelaa uudelleen
                 </button>
             </div>
         </div>

@@ -4,7 +4,7 @@ header {
   padding: 30px;
   text-align: center;
   background: #d0c5e3;
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Architects Daughter', cursive;
 }
 .topnav {
   overflow: hidden;
@@ -19,7 +19,7 @@ header {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: "Pangolin", cursive;
+  font-family: 'Architects Daughter', cursive;
   font-size: 20px;
 }
 
@@ -47,26 +47,26 @@ body {
 
 body {
 	background: #e7d5d5;
-	font-family: 'Pangolin', cursive;
-	font-size: 16px;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 25px;
 }
 
-.container {
+.container {  /*tämän muutin */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
   margin-top: 5%;
 }
-  
+
 
 h1 {
-	font-family: 'Pangolin', cursive;
+	font-family: 'Architects Daughter', cursive;
 }
 
 
 /*
- * Styles for the deck of cards
+ * Tyylit kortti "pakalle"
  */
 
 
@@ -87,7 +87,8 @@ h1 {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background-image: url("tausta.png");
+	background-image: url("images/tausta.png"); /*Kokeilin laittaa tähän taustan kun puuttui kuva tästä, sano mitä pidät/Toni 19.4 */
+	background-size: cover; /*Kortintaustan koon määritys/Toni 19.4 */
 	color: #ffffff;
 	border-radius: 5px;
 	cursor: pointer;
@@ -140,35 +141,23 @@ h1 {
 
 
 /*
- * Styles for the Score Panel
+ * Tyylit pistetaulukolle
  */
 
 
 .score-panel {
 	text-align: left;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
-.score-panel .stars {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin: 0 5px 0 0;
-}
 
-.score-panel .stars li {
-	list-style: none;
-	display: inline-block;
-}
 
 .score-panel .restart {
 	float: right;
 	cursor: pointer;
 }
 
-.fa-star {
-	color: #FFD700;
-}
+
 
 .timer {
 	display: inline-block;
@@ -177,7 +166,7 @@ h1 {
 
 
 /*
- * Styles for congratulations modal
+ * Tyylit onnittelu viestille
  */
 
 
@@ -197,7 +186,7 @@ h1 {
 	visibility: visible;
 	opacity: 1;
 }
-  
+
 .popup {
 	margin: 70px auto;
 	padding: 20px;
@@ -206,13 +195,13 @@ h1 {
 	width: 85%;
 	position: relative;
 	transition: all 5s ease-in-out;
-	font-family: 'Pangolin', cursive;
+	font-family: 'Architects Daughter', cursive;
 }
-  
+
 .popup h2 {
 	margin-top: 0;
 	color: #333;
-	font-family: Tahoma, Arial, sans-serif;
+	font-family: 'Architects Daughter', cursive;
 }
 
 .popup .close {
@@ -242,9 +231,7 @@ h1 {
 	opacity: 100 !important;
 }
 
-#starRating li {
-	display: inline-block;
-}
+
 
 #play-again {
 	background-color: #141214;
@@ -253,12 +240,12 @@ h1 {
 	display: block;
 	margin: 0 auto;
 	width: 50%;
-	font-family: 'Pangolin', cursive;
+	font-family: 'Architects Daughter', cursive;
 	color: #ffffff;
 	border-radius: 5px;
 }
 
-/* animations */
+/* animaatiot*/
 @keyframes flipInY {
 	from {
 		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
